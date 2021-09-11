@@ -1,0 +1,27 @@
+
+
+.container{
+    width: 500px;
+    height: auto;
+    padding:20px;
+    background-color: aqua;
+    opacity: 0.9;
+    margin: auto;
+}
+[type="text"],[type="email"]
+{
+    width:100%;
+    padding:6px;
+    margin:10px 0;
+}
+
+button {
+    border: none;
+    padding: 6px;
+    outline: none;
+    font-size: 19px;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
