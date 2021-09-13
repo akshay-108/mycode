@@ -2,30 +2,27 @@
 <html>
     <head>
         <title>Tabs with accordion</title>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
+        <link rel="stylesheet" href="tab.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     </head>
     <body>
-        <div id="tabs">
-            <div id="accordion">
-                <h3>Section 1</h3>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, assumenda repellendus voluptatem mollitia minima in. Aut a qui mollitia vero atque sequi impedit voluptas, laboriosam architecto, nobis, alias ipsa nisi.
-                    </p>
-                    <div id="accordion2">
-                        <h3>Section 2</h3>
-                        <div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, assumenda repellendus voluptatem mollitia minima in. Aut a qui mollitia vero atque sequi impedit voluptas, laboriosam architecto, nobis, alias ipsa nisi.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+    <div class="container">
+        <div class="tabs">
+            <button id="tog" class="tog">Tab1</button>
+            <button id="tog2" class="tog">Tab2</button>
+        </div>
+
+        <!-- FIRST TAB -->
+        <div class="d1">
+            <button id="accordion" class="accordion">Tab Content</button>
+            <div id="accordion-content1" class="accordion-content">
+                <p>
+                    hello
+                </p>
             </div>
-            </div>
+        </div>
+    </div>
         <script href="text/javascript" src="tab.js"></script>
     </body>
 </html>

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Structure</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
     <link rel="stylesheet" media="screen and (min-width:360px) and (max-width:576px)" href="mobile.css">
     <link rel="stylesheet" media="screen and (min-width:577px) and (max-width:768px)" href="tab.css">
     <link rel="stylesheet" media="screen and (min-width:769px) and (max-width:992px)" href="laptop.css">
@@ -22,9 +24,9 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#" onclick="show_hide()" class="dropdown">About</a>
                     <div id="dropdown-content">
-                        <span>abcd</span><br>
-                        <span>efgh</span><br>
-                        <span>high</span><br>
+                        <span>Html</span><br>
+                        <span>Css</span><br>
+                        <span>jQuery</span><br>
                     </div>
                 </li>
                 <li><a href="#">Contact</a></li>
@@ -52,11 +54,44 @@
 			        <button onclick="modulus()">Modulus</button>
 		            </div>
                     
-		            <script type="text/javascript" src="calculator.js"></script>
+		            
                 </div>
                 <div class="item3">Aside1</div>
             </div>
-            <div class="item4">Aside2</div>
+            <div class="item4">
+                
+                <div class="tab-container">
+                    <div class="tabs">
+                        <button id="tog" class="tog">Tab1</button>
+                        <button id="tog2" class="tog">Tab2</button>
+                    </div>
+
+                    <!-- FIRST TAB -->
+                    <div class="d1" id="d1">
+                        <button id="accordion" class="accordion">Tab Content</button>
+                        <div id="accordion-content" class="accordion-content">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SECOND TAB -->
+                    <div class="d1" id="d2">
+                        <button id="accordion2" class="accordion">Tab Content</button>
+                        <div id="accordion-content2" class="accordion-content">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script type="text/javascript" src="calculator.js"></script>
+
+                <script type="text/javascript" src="tab.js"></script>   
+            </div>
         </section>
         <div class="footer">
             <h1>Footer</h1>

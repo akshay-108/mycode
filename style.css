@@ -40,9 +40,9 @@
     position: absolute;
     left: 407px;
     background-color: #f9f9f9;
-    width: 82px;
-    font-size: 26px;
-    padding: 5px;
+    width: 96px;
+    font-size: 21px;
+    padding: 11px;
 }
 .section{
     display:grid;
@@ -92,6 +92,7 @@
     left: 13px;
     font-size: 30px;
 }
+/* calculator add */
 button {
     padding: 10px;
     border: none;
@@ -100,13 +101,64 @@ button {
     font-size: 14px;
 }
 #result {
-    background-color: yellow;
+    /*background-color: yellow;*/
     padding: 5px;
     position: absolute;
     top: 366px;
     left: 886px;
-    color: #000;
+    color: yellow;
     font-weight: bold;
+}
+
+/* Tab and accordion code */
+.tabs {
+    display: flex;
+}
+.d1{
+    display: none;
+}
+.accordion-content{
+    display: none;
+}
+.tab-container{
+    /*background-color: lightgray;*/
+    padding: 17px;
+    height: auto;
+}
+.tog {
+    background-color: aqua;
+    width: 121px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-family: unset;
+    padding: 9px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tog:hover{
+    border-bottom: 1px solid #000;
+}
+#accordion, #accordion2 {
+    width: 311px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-family: unset;
+    padding: 9px;
+    cursor: pointer;
+    font-weight: bold;
+    oposition: relative;
+    position: relative;
+    top: 9px;
+    background-color: antiquewhite;
+}
+.accordion-content {
+    background-color: bisque;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    width: 94%;
 }
 .footer{
     border: 1px solid #000;

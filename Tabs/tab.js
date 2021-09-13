@@ -1,15 +1,9 @@
-$(function()
-{
-    $("#tabs").tabs({
-        collapsible: true
-    });
-});
 
-$( function() {
-    $("#accordion").accordion({
-      collapsible: true
+$(document).ready(function(){
+    $("#tog").click(function(){
+        $("div.d1").toggle();
     });
-    $("#accordion2").accordion({
-        collapsible: true
+    $(".accordion").click(function(){
+        $(".accordion-content").toggle();
     });
 });

@@ -1,0 +1,42 @@
+.d1{
+    display: none;
+}
+.accordion-content{
+    display: none;
+}
+.container{
+    background-color: lightgray;
+    padding: 17px;
+    height: auto;
+}
+.tog {
+    background-color: aqua;
+    width: 121px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-family: unset;
+    padding: 9px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#accordion {
+    width: 311px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-family: unset;
+    padding: 9px;
+    cursor: pointer;
+    font-weight: bold;
+    oposition: relative;
+    position: relative;
+    top: 9px;
+    background-color: antiquewhite;
+}
+.accordion-content {
+    background-color: bisque;
+    padding: 10px;
+    position: relative;
+    top: 9px;
+}
