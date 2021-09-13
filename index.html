@@ -17,12 +17,43 @@
             <h1>Header</h1>
         </div>
         <div class="nav">
-            <h1>Nav</h1>
+            <ul class="navbar">
+                <li class="logo"><a href="#">HTML Structure</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" onclick="show_hide()" class="dropdown">About</a>
+                    <div id="dropdown-content">
+                        <span>abcd</span><br>
+                        <span>efgh</span><br>
+                        <span>high</span><br>
+                    </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
         </div>
         <section class="section">
             <div class="article">
                 <div class="item1">Article</div>
-                <div class="item2">P</div>
+                <div class="item2">
+		            <div class="item2-sub">
+			        <h3>calculator</h3><br>
+			        <label>Enter First Number</label>
+			        <input type="text" id="num1"><br><br>
+			        <label>Enter second Number</label>
+			        <input type="text" id="num2">
+			        <br><br>
+                    <span id="result"></span>
+                    <br>
+                    
+			        <button onclick="addition()">Addition</button>
+			        <button onclick="subtraction()">Subtraction</button>
+			        <button onclick="multiplication()">Muliplication</button>
+			        <button onclick="division()">Division</button>
+			        <button onclick="modulus()">Modulus</button>
+		            </div>
+                    
+		            <script type="text/javascript" src="calculator.js"></script>
+                </div>
                 <div class="item3">Aside1</div>
             </div>
             <div class="item4">Aside2</div>
