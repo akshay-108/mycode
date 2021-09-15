@@ -1,42 +1,55 @@
-.d1{
-    display: none;
-}
-.accordion-content{
-    display: none;
-}
-.container{
-    background-color: lightgray;
-    padding: 17px;
-    height: auto;
-}
-.tog {
+body{
+            margin-top: 100px;
+            font-family: 'Trebuchet MS', serif;
+            line-height: 1.6
+        }
+        .container{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+
+
+        ul.tabs{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        ul.tabs li{
+            background: none;
+            color: #222;
+            display: inline-block;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        ul.tabs li.current{
+            background: #ededed;
+            color: #222;
+        }
+
+        .tab-content{
+            display: none;
+            background: #ededed;
+            padding: 15px;
+        }
+
+        .tab-content.current{
+            display: inherit;
+        }
+
+        /*Accordion css*/
+h3 {
     background-color: aqua;
-    width: 121px;
-    border: none;
-    outline: none;
-    font-size: 30px;
-    font-family: unset;
-    padding: 9px;
-    cursor: pointer;
-    font-weight: bold;
-}
-#accordion {
-    width: 311px;
-    border: none;
-    outline: none;
-    font-size: 30px;
-    font-family: unset;
-    padding: 9px;
-    cursor: pointer;
-    font-weight: bold;
-    oposition: relative;
-    position: relative;
-    top: 9px;
-    background-color: antiquewhite;
-}
-.accordion-content {
-    background-color: bisque;
     padding: 10px;
-    position: relative;
-    top: 9px;
+    margin: 3px;
+    width: 97%;
+    cursor: alias;
+}
+.demo div {
+color: #FFF;
+background-color: maroon;
+padding: 11px;
+margin-left: 10px;
+width: 95%;
 }

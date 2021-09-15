@@ -8,19 +8,45 @@
     <body>
 
     <div class="container">
-        <div class="tabs">
-            <button id="tog" class="tog">Tab1</button>
-            <button id="tog2" class="tog">Tab2</button>
+           <ul class="tabs">
+               <li class="tab-link current" data-tab="tab-1">Tab1</li>
+
+               <li class="tab-link" data-tab="tab-2">Tab2</li>
+           </ul>
+
+        <div id="tab-1" class="tab-content current">
+            <div class="demo">
+                <h3>Html</h3>
+                <div>
+                    HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.
+                </div>
+                <h3>Css</h3>
+                <div>
+                    CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files 
+                </div>
+                <h3>Javascript</h3>
+                <div>
+                    JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
+                </div>
+            </div>
         </div>
 
-        <!-- FIRST TAB -->
-        <div class="d1">
-            <button id="accordion" class="accordion">Tab Content</button>
-            <div id="accordion-content1" class="accordion-content">
-                <p>
-                    hello
-                </p>
+        <div id="tab-2" class="tab-content">
+           <div class="demo">
+                <h3>Html</h3>
+                <div>
+                    HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.
+                </div>
+                <h3>Css</h3>
+                <div>
+                    CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files 
+                </div>
+                <h3>Javascript</h3>
+                <div>
+                    JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
+                </div>
             </div>
+        </div>
         </div>
     </div>
         <script href="text/javascript" src="tab.js"></script>

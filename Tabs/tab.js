@@ -1,9 +1,21 @@
-
+// Tabs Code
 $(document).ready(function(){
-    $("#tog").click(function(){
-        $("div.d1").toggle();
+    
+    $('ul.tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
     });
-    $(".accordion").click(function(){
-        $(".accordion-content").toggle();
+});
+
+// Accordion code
+$(document).ready(function(){
+    $(".demo div").hide();
+    $(".demo h3").click(function(){
+        $(this).next().slideToggle().siblings("div:visible").slideUp();
     });
 });
