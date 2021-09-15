@@ -13,33 +13,33 @@ function addition()
 	let n1=parseInt(document.getElementById('num1').value);
 	let n2=parseInt(document.getElementById('num2').value);
 
-	let res=document.getElementById('result').innerHTML="Result is: " + (n1+n2);
+	let res=document.getElementById('jsresult').innerHTML="Result is: " + (n1+n2);
 }
 function subtraction()
 {
 	let n1=parseInt(document.getElementById('num1').value);
 	let n2=parseInt(document.getElementById('num2').value);
 
-	let res=document.getElementById('result').innerHTML="Result is: " + (n1-n2);
+	let res=document.getElementById('jsresult').innerHTML="Result is: " + (n1-n2);
 }
 function multiplication()
 {
 	let n1=parseInt(document.getElementById('num1').value);
 	let n2=parseInt(document.getElementById('num2').value);
 
-	let res=document.getElementById('result').innerHTML="Result is: " + n1*n2;
+	let res=document.getElementById('jsresult').innerHTML="Result is: " + n1*n2;
 }
 function division()
 {
 	let n1=parseInt(document.getElementById('num1').value);
 	let n2=parseInt(document.getElementById('num2').value);
 
-	let res=document.getElementById('result').innerHTML="Result is: " + n1/n2;
+	let res=document.getElementById('jsresult').innerHTML="Result is: " + n1/n2;
 }
 function modulus()
 {
 	let n1=parseInt(document.getElementById('num1').value);
 	let n2=parseInt(document.getElementById('num2').value);
 
-	let res=document.getElementById('result').innerHTML="Result is: " + n1%n2;
+	let res=document.getElementById('jsresult').innerHTML="Result is: " + n1%n2;
 }
