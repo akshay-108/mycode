@@ -16,30 +16,30 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Header</h1>
-        </div>
-        <div class="nav">
-            <ul class="navbar">
-                <li class="logo"><a href="#">HTML Structure</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#" onclick="show_hide()" class="dropdown">About</a>
-                    <div id="dropdown-content">
-                        <span>Html</span><br>
-                        <span>Css</span><br>
-                        <span>jQuery</span><br>
-                    </div>
-                </li>
-                <li><a href="#" id="modalBtn">Contact</a>
+<div class="container">
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="nav">
+        <ul class="navbar">
+            <li class="logo"><a href="#">HTML Structure</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="show_hide()" class="dropdown">About</a>
+                <div id="dropdown-content">
+                    <span>Html</span><br>
+                    <span>Css</span><br>
+                    <span>jQuery</span><br>
+                </div>
+            </li>
+            <li><a href="#" id="modalBtn">Contact</a>
 
-                    <!-- contact form -->
-                <div id="myModal" class="modal">
-                    
-                    <div class="modal-content">
-                        <h2 class="heading">Registration Form</h2>
-                        <form id="form">
-                            <span class="close">&times;</span>
+                <!-- contact form -->
+            <div id="myModal" class="modal">
+                
+                <div class="modal-content">
+                    <h2 class="heading">Registration Form</h2>
+                    <form id="form">
+                        <span class="close">&times;</span>
                         <label for="name">Enter Your Name</label>
                         <small id="nameErr" class="error" style="color:red"></small>
                         <input type="text"  id="name">
@@ -67,9 +67,9 @@
                         <small id="radioErr" style="color:red"></small>
                         <div class="gender">
                             <label>Select Gender</label>
-                            <input type="radio" id="r1" name="Gender">Male
-                            <input type="radio" id="r2" name="Gender"><span>FeMale</span>
-                            <input type="radio" id="r3" name="Gender"><span>Other</span>
+                            <input type="radio" id="r1" class="gender" name="Gender">Male
+                            <input type="radio" id="r2" class="gender" name="Gender"><span>FeMale</span>
+                            <input type="radio" id="r3" class="gender" name="Gender"><span>Other</span>
                         </div>
                         
 
@@ -83,121 +83,120 @@
                         <span id="Success" style="color:green;"></span>
                     </form>
                 </div>
-
             </div>
 
 
-                </li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </div>
-        <section class="section">
-            <div class="article">
-                <div class="item1">Article</div>
-                <div class="item2">
-		            <div class="item2-sub">
+            </li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <section class="section">
+        <div class="article">
+            <div class="item1">Article</div>
+            <div class="item2">
+	            <div class="item2-sub">
 
-                        <!-- javascript calculator -->
-                        <div class="javascript-cal">
-        			        <h3>Javascript calculator</h3><br>
-                            <table>
-                                <tr>
-                                    <td><label>Enter First Number</label></td>
-                                    <td><input type="text" id="num1"></td>
-                                </tr>
-                                <tr>
-                                    <td><label>Enter second Number</label></td>
-                                    <td><input type="text" id="num2"></td>
-                                </tr>
-                            </table>
-                            <br>
-                            <span id="jsresult"></span>
-                            <br>
-                            <button onclick="addition()">Addition</button>
-                            <button onclick="subtraction()">Subtraction</button>
-                            <button onclick="multiplication()">Muliplication</button>
-                            <button onclick="division()">Division</button>
-                            <button onclick="modulus()">Modulus</button>
-                        </div>
+                    <!-- javascript calculator -->
+                    <div class="javascript-cal">
+    			        <h3>Javascript calculator</h3><br>
+                        <table>
+                            <tr>
+                                <td><label>Enter First Number</label></td>
+                                <td><input type="text" id="num1"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Enter second Number</label></td>
+                                <td><input type="text" id="num2"></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <span id="jsresult"></span>
+                        <br>
+                        <button onclick="addition()">Addition</button>
+                        <button onclick="subtraction()">Subtraction</button>
+                        <button onclick="multiplication()">Muliplication</button>
+                        <button onclick="division()">Division</button>
+                        <button onclick="modulus()">Modulus</button>
+                    </div>
 
-                        <!-- jQuery calculator -->
-                       <div class="jquery-calculator">
-                            <table>
-                                <h3>jQuery calculator</h3><br>
-                                <tr>
-                                    <td><label for="num3">Enter first number</label></td>
-                                    <td><input type="text" name="num3" id="num3"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="num4">Enter second number</label></td>
-                                    <td><input type="text" name="num4" id="num4"></td>
-                                </tr>
-                            </table>
-                            <br>
-                            <span id="jqresult"></span>
-                            <br>
-                            <button type="button" id="add">Addition</button>
-                            <button type="button" id="sub">Subtraction</button>
-                            <button type="button" id="mul">Multiplication</button>
-                            <button type="button" id="div">Division</button>
-                            <button type="button" id="mod">Modulus</button>
-                        </div> 
-	               </div>
-                </div>
-                <div class="item3">Aside1</div>
+                    <!-- jQuery calculator -->
+                   <div class="jquery-calculator">
+                        <table>
+                            <h3>jQuery calculator</h3><br>
+                            <tr>
+                                <td><label for="num3">Enter first number</label></td>
+                                <td><input type="text" name="num3" id="num3"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="num4">Enter second number</label></td>
+                                <td><input type="text" name="num4" id="num4"></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <span id="jqresult"></span>
+                        <br>
+                        <button type="button" id="add">Addition</button>
+                        <button type="button" id="sub">Subtraction</button>
+                        <button type="button" id="mul">Multiplication</button>
+                        <button type="button" id="div">Division</button>
+                        <button type="button" id="mod">Modulus</button>
+                    </div> 
+               </div>
             </div>
-
-            <!-- Tabs or Accordion -->
-            <div class="item4">
-                
-
-                <div class="tab-container">
-                   <ul class="tabs">
-                       <li class="tab-link current" data-tab="tab-1">Tab1</li>
-
-                       <li class="tab-link" data-tab="tab-2">Tab2</li>
-                   </ul>
-
-            <div id="tab-1" class="tab-content current">
-            <div class="demo">
-                <h3 class="acc-header">Html</h3>
-                <div>
-                    HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.
-                </div>
-                <h3 class="acc-header">Css</h3>
-                <div>
-                    CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files 
-                </div>
-                <h3 class="acc-header">Javascript</h3>
-                <div>
-                    JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
-                </div>
-            </div>
+            <div class="item3">Aside1</div>
         </div>
 
-        <div id="tab-2" class="tab-content">
-           <div class="demo">
-                <h3 class="acc-header">Html</h3>
-                <div>
-                    HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.
-                </div>
-                <h3 class="acc-header">Css</h3>
-                <div>
-                    CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files 
-                </div>
-                <h3 class="acc-header">Javascript</h3>
-                <div>
-                    JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
-                </div>
+        <!-- Tabs or Accordion -->
+        <div class="item4">
+            
+
+            <div class="tab-container">
+               <ul class="tabs">
+                   <li class="tab-link current" data-tab="tab-1">Tab1</li>
+
+                   <li class="tab-link" data-tab="tab-2">Tab2</li>
+               </ul>
+
+        <div id="tab-1" class="tab-content current">
+        <div class="demo">
+            <h3 class="acc-header">Html</h3>
+            <div>
+                HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.
             </div>
-        </div>
-        </div>
+            <h3 class="acc-header">Css</h3>
+            <div>
+                CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files 
             </div>
-        </section>
-        <div class="footer">
-            <h1>Footer</h1>
+            <h3 class="acc-header">Javascript</h3>
+            <div>
+                JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
+            </div>
         </div>
     </div>
+
+    <div id="tab-2" class="tab-content">
+       <div class="demo">
+            <h3 class="acc-header">Html</h3>
+            <div>
+                HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.
+            </div>
+            <h3 class="acc-header">Css</h3>
+            <div>
+                CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files 
+            </div>
+            <h3 class="acc-header">Javascript</h3>
+            <div>
+                JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
+            </div>
+        </div>
+    </div>
+    </div>
+        </div>
+    </section>
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+</div>
 </body>
 </html>
 
