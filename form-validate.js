@@ -9,13 +9,21 @@ $(document).ready(function(){
 	});
 });
 
-//form valiation
+//form valiation in jquery
 $(document).ready(function(){
 
     $("#submit").click(function(event){
 
-    	// event.preventDefault();
-
+    	event.preventDefault();
+       
+        $("#nameErr").val("");
+        $("#emailErr").val("");
+        $("#mobileErr").val("");
+        $("#passErr").val("");
+        $("#passErr2").val("");
+        $("#radioErr").val("");
+        $("#msgErr").val("");
+        
         var numRegex= /^[0-9]+$/;
         var contact = $("#mob").val();
 
@@ -61,10 +69,11 @@ $(document).ready(function(){
             $("#msgErr").html("Message is required");
         }
 
-        $("#Success").text("Form submitted")
-        event.preventDefault();
+        
 
+        // event.preventDefault();
     });
+    
 });
 
     
