@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Assignment</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+<body>
+	<!-- Navbar with dropdown-->
+<nav class="navbar">
+	<ul>
+		<li>
+			<a href="#">Home</a>
+		</li>
+		<li>
+			<a href="#" onclick="dropdownjs()">Dropdown</a>
+			<ul id="dropdown-content">
+				<li class="drop-link">
+					<a href="#">HTML</a>
+				</li>
+				<li>
+					<a href="#">CSS</a>
+				</li>
+				<li>
+					<a href="#">Javascript</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav> 
+
+
+
+	<!-- javascript calculator -->
+<div class="javascript-cal">
+    <h3>Javascript calculator</h3><br>
+    <table>
+        <tr>
+            <td><label>Enter First Number</label></td>
+            <td><input type="text" id="num1"></td>
+        </tr>
+        <tr>
+            <td><label>Enter second Number</label></td>
+            <td><input type="text" id="num2"></td>
+        </tr>
+    </table>
+    <br>
+    <span id="jsresult"></span>
+    <br>
+    <button onclick="addition()">Addition</button>
+    <button onclick="subtraction()">Subtraction</button>
+    <button onclick="multiplication()">Muliplication</button>
+    <button onclick="division()">Division</button>
+    <button onclick="modulus()">Modulus</button>
+</div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
